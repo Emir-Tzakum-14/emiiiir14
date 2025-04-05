@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta de Amor</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .carta {
+      background-color: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      max-width: 600px;
+      text-align: center;
+      animation: fadeIn 2s ease-out;
+      position: relative;
+    }
+
+    .carta h1 {
+      color: #e91e63;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      animation: slideDown 1.5s ease-out;
+    }
+
+    .carta p {
+      font-size: 1.2em;
+      color: #444;
+      line-height: 1.6;
+      animation: fadeIn 3s ease-in;
+    }
+
+    .corazon {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 40px;
+      color: #e91e63;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideDown {
+      from {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: translateX(-50%) scale(1);
+      }
+      50% {
+        transform: translateX(-50%) scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="carta">
+    <div class="corazon">❤️</div>
+    <h1>Para Ti, Mi Amor</h1>
+    <p>
+      Desde el primer momento en que te vi, supe que eras especial. Cada día a tu lado
+      es un regalo que atesoro con todo mi corazón. Gracias por tu amor, tu paciencia y por hacerme sonreír incluso en los días más grises.
+      <br><br>
+      Te amo más de lo que las palabras pueden expresar, y siempre lo haré. ❤️
+    </p>
+      Atte: Tu novio el programador jiji
+  </div>
+</body>
+</html>
